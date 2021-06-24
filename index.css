@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: serif;
+  overflow: hidden;
+}
+header {
+  width: 100%;
+  height: 8vh;
+  /* background-color: red;*/
+}
+header nav {
+  width: 50%;
+  height: 100%;
+  /* background-color: blue;*/
+  float: right;
+}
+header nav ul {
+  height: 100%;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #808080;
+  padding: 10px;
+}
+header nav ul li:hover a {
+  text-decoration: underline;
+}
+/*#appBar {
+  width: 30px;
+  height: 5vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+#appBar:hover {
+  background-color: #ccc;
+}*/
+
+#appBar img {
+  width: 15px;
+}
+/*#bonolo {
+  width: 30px;
+  height: 5vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+#bonolo:hover {
+  background-color: #ccc;
+}*/
+#bonolo img {
+  width: 25px;
+  border-radius: 50px;
+}
+#voice img {
+  width: 20px;
+}
+section {
+  width: 100%;
+  height: 50vh;
+  /*background-color: violet;*/
+}
+.content {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+section .content .search-input {
+  position: relative;
+  width: 50%;
+  top: 20px;
+}
+section .content .search-input .query {
+  font-size: 16px;
+  width: 100%;
+  padding: 15px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  outline: none;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+section .content .search-input .icons {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  pointer-events: none;
+}
+.search-input .bx {
+  font-size: 25px;
+}
+.buttons {
+  position: relative;
+  top: 2rem;
+}
+button {
+  margin: 0 5px;
+  padding: 8px 15px;
+  color: #808080;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+button:hover {
+  border: 1px solid #808080;
+}
+.searchBtn a {
+  color: #808080;
+  text-decoration: none;
+}
+.languages {
+  margin-top: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.languages ul {
+  display: inline-flex;
+}
+.languages ul li {
+  list-style: none;
+}
+.languages ul li a {
+  text-decoration: none;
+  padding: 10px;
+}
+.languages ul li:hover a {
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 170px;
+  width: 100%;
+  /*height: 8vh;*/
+  background-color: #e9e8e8;
+  background-size: cover;
+}
+footer ul {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+footer ul li {
+  list-style: none;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #808080;
+  padding: 5px;
+}
+footer ul li:hover a {
+  text-decoration: underline;
+}
+.country {
+  position: relative;
+  top: 1.5rem;
+  left: 0;
+  padding-bottom: 2.5rem;
+  height: 8vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 96%;
+  color: #808080;
+}
+.country h4 {
+  color: #808080;
+  font-weight: 4001;
+}
+.line {
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+.info-start {
+  position: relative;
+  width: 100%;
+  top: 1rem;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.info-center {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.info-end {
+  position: relative;
+  width: 100%;
+  bottom: 1rem;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 1060px) {
+  section .content .search-input {
+    width: 95%;
+  }
+  .languages {
+    width: 100%;
+    font-size: 15px;
+  }
+  .languages ul li a {
+    padding: 3px;
+  }
+  footer {
+    margin-top: 65px;
+    width: 100%;
+    height: 31vh;
+    background-color: #e9e8e8;
+    background-size: cover;
+  }
+  footer ul {
+    position: relative;
+    top: 2rem;
+  }
+  .info-start {
+    position: relative;
+    width: 100%;
+    top: 3rem;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .info-center {
+    position: relative;
+    width: 100%;
+    bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .info-end {
+    position: relative;
+    width: 100%;
+    bottom: -3.5rem;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
